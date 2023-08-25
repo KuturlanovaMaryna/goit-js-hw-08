@@ -2,7 +2,7 @@ import '../css/03-feedback.css';
 import '../css/common.css';
 import throttle from 'lodash.throttle';
 
-const STORAGE_KEY = 'feedback';
+const STORAGE_KEY = 'feedback-form-state';
 
 const form = document.querySelector('.js-feedback-form');
 const message = document.querySelector('.js-feedback-form textarea');
