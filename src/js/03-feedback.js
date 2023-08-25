@@ -19,7 +19,7 @@ function onTextareaInput() {
     const objectSave = { email: email.value, message: message.value };
     
     localStorage.setItem(STORAGE_KEY, JSON.stringify(objectSave));
-}
+};
 
 function onFormSubmit(evt) {
     evt.preventDefault();
@@ -28,7 +28,7 @@ function onFormSubmit(evt) {
     evt.currentTarget.reset();
    
     localStorage.removeItem(STORAGE_KEY);
-}
+};
 
 function populateTextarea() {
     const savedMsg = JSON.parse(localStorage.getItem(STORAGE_KEY));
@@ -36,6 +36,5 @@ function populateTextarea() {
         email.value = savedMsg.email;
         message.value = savedMsg.message;
        
-    }
-}
-
+    };
+};
