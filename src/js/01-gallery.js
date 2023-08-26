@@ -23,4 +23,4 @@ const galleryList = (array) => array.map(item =>
 listEL.insertAdjacentHTML("beforeend", galleryList(galleryItems));
 
 
-const lightbox = new SimpleLightbox('.gallery a', { captionsData: "alt", captionDelay: 250, });
+new SimpleLightbox('.gallery a', { captionsData: "alt", captionDelay: 250, });

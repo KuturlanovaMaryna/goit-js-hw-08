@@ -23,7 +23,9 @@ function onTextareaInput() {
 
 function onFormSubmit(evt) {
     evt.preventDefault();
-
+    if (email.value === '' || message.value === '') {
+    return alert('You have not filled out the required fields');
+    };
     console.log({ email: email.value, message: message.value });
     evt.currentTarget.reset();
    
